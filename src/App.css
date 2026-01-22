@@ -126,3 +126,306 @@ button:disabled {
   background-color: #ddd;
   cursor: not-allowed;
 }
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  width: 100%;
+  background-color: #495e57;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+  gap: 2rem;
+}
+
+/* ---------- HERO TEXT ---------- */
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hero-text h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 3rem;
+  color: #f4ce14;
+  line-height: 1;
+}
+
+.hero-text h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.hero-text p {
+  max-width: 320px;
+  color: white;
+  line-height: 1.5;
+}
+
+.hero-text button {
+  margin-top: 1rem;
+  width: fit-content;
+}
+
+/* ---------- HERO IMAGE ---------- */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image img {
+  width: 260px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transform: translateY(30px);
+}
+
+/* ---------- SPECIALS SECTION ---------- */
+.specials {
+  width: 100%;
+  max-width: 960px;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ---------- SPECIALS HEADER ---------- */
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specials-header h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  color: #333333;
+}
+
+/* ---------- CARDS CONTAINER ---------- */
+.specials-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  flex: 1;
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- CARD IMAGE ---------- */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ---------- CARD BODY ---------- */
+.card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+
+/* ---------- TITLE + PRICE ---------- */
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.price {
+  color: #ee9972;
+  font-weight: bold;
+}
+
+/* ---------- DELIVERY ---------- */
+.delivery {
+  margin-top: auto;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ---------- TESTIMONIALS SECTION ---------- */
+.testimonials {
+  width: 100%;
+  background-color: #edefee;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.testimonials h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  color: #333333;
+}
+
+/* ---------- TESTIMONIAL CARDS ---------- */
+.testimonials-cards {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* ---------- CARD ---------- */
+.testimonial-card {
+  flex: 1;
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ---------- RATING ---------- */
+.rating {
+  font-size: 1rem;
+  color: #f4ce14;
+}
+
+/* ---------- USER ---------- */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user span {
+  font-weight: bold;
+}
+
+/* ---------- REVIEW TEXT ---------- */
+.testimonial-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  width: 100%;
+  background-color: #edefee;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+/* ---------- FOOTER CONTENT ---------- */
+.footer-content {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* ---------- FOOTER COLUMN ---------- */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ---------- FOOTER HEADINGS ---------- */
+.footer-column h3,
+.footer-column h4 {
+  font-family: "Markazi Text", serif;
+  font-size: 1.25rem;
+  color: #495e57;
+}
+
+/* ---------- FOOTER LIST ---------- */
+.footer-column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    justify-content: center;
+  }
+
+  .hero-image img {
+    transform: translateY(0);
+  }
+  
+  .specials-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .specials-cards {
+    flex-direction: column;
+  }
+  
+  .testimonials-cards {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
