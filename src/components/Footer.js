@@ -1,10 +1,12 @@
+import logo from "../assets/small_logo.png"
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
         {/* LOGO */}
         <div className="footer-column">
-          <h3>Little Lemon</h3>
+          <img src={logo} alt="small logo" />
         </div>
 
         {/* NAVIGATION */}
