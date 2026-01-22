@@ -1,63 +1,128 @@
-.App {
+/* ---------- RESET ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- ROOT ---------- */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Karla", Arial, sans-serif;
+  background-color: #edefee;
+  color: #333333;
+}
+
+/* ---------- CONTAINER ---------- */
+header,
+main {
+  width: 100%;
+  max-width: 960px;
+  padding: 1.5rem;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---------- LOGO / TITLE ---------- */
+header h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 2.5rem;
+  color: #495e57;
+}
+
+/* ---------- NAV ---------- */
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #495e57;
+}
+
+/* ---------- HERO / MAIN ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ---------- HEADINGS ---------- */
+h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  color: #495e57;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ---------- PARAGRAPH ---------- */
+p {
+  max-width: 600px;
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
+/* ---------- FORM CARD ---------- */
+form {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 420px;
+  background-color: white;
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.App-main {
-  /* background-color: #282c34; */
-  min-height: 80vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  /* color: white; */
+/* ---------- FORM ELEMENTS ---------- */
+label {
+  font-weight: 600;
+  text-align: left;
 }
 
-.App-footer {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input,
+select {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
-.App-link {
-  flex: 1 1 auto;
-  a {
-      color: #61dafb;
-  }
+/* ---------- BUTTON ---------- */
+button {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f4ce14;
+  color: #333333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover:not(:disabled) {
+  background-color: #e6be12;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
 }
