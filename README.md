@@ -1,3 +1,17 @@
+# Little Lemon Restaurant Web App
+
+**React** app for the Little Lemon restaurant. Part of Coursera Meta front-end developer capstone.
+
+## Setup and commands
+
+Clone the repository and install dependencies:
+
+```bash
+git clone <your-repo-url>
+cd the-Little-Lemon-website
+npm install
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
